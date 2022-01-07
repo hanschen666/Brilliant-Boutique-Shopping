@@ -7,9 +7,7 @@ const Header = () => {
   return (
     <div className="header">
       <Link to="/">
-        <a href="" className="logo">
-          <img className="logo" src={logo}></img>
-        </a>
+        <img className="logo" src={logo}></img>
       </Link>
       <div className="options">
         <Link to="/shop" className="option">
