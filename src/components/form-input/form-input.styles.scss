@@ -17,14 +17,15 @@ $main-color: black;
     background: none;
     background-color: white;
     color: $sub-color;
-    font-size: 18px;
-    padding: 10px 10px 10px 5px;
+    font-size: 17px;
+    padding: 10px 5px 10px 5px;
     display: block;
     width: 100%;
     border: none;
     border-radius: 0;
     border-bottom: 1px solid $sub-color;
-    margin: 25px 0;
+    margin: 15px 0;
+
 
     &:focus {
       outline: none;
@@ -41,7 +42,7 @@ $main-color: black;
 
   .form-input-label {
     color: $sub-color;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: normal;
     position: absolute;
     pointer-events: none;
