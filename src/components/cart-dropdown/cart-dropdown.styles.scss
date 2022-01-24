@@ -11,6 +11,12 @@
   right: 60px;
   z-index: 5;
 
+  .empty-message {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 50px;
+  }
+
   .cart-items {
     height: 340px;
     display: flex;
@@ -24,8 +30,6 @@
     padding-right: 30px;
     position: absolute;
     bottom: 10px;
-    right:37px;
+    right: 37px;
   }
-
-
 }

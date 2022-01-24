@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { selectHidden } from "../../redux/cart/cart.selectors";
+import { selectCurrentUser } from "../../redux/user/user.selectors";
 import "./header.styles.scss";
 import logo from "../../assets/Logo.png";
 import { auth } from "../../firebase/firebase.utils";
@@ -36,8 +38,8 @@ const Header = ({ currentUser, hidden }) => {
   );
 };
 
-const mapStateToProps = ({ user: { currentUser }, cart: { hidden } }) => {
-  return { currentUser, hidden };
-};
-
+const mapStateToProps = (state) => ({
+  currentUser: selectCurrentUser(state),
+  hidden: selectHidden(state),
+});
 export default connect(mapStateToProps)(Header);
